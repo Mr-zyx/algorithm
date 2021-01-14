@@ -19,6 +19,8 @@ public class Answer {
       for (int j = i + 2; j < N; j++) {
         if ((locations[j] - locations[i]) <= D) {
           count += (j - i - 1);
+        } else {
+          break;
         }
       }
     }
