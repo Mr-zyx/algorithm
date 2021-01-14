@@ -14,18 +14,16 @@ public class Answer {
       locations[i] = sc.nextInt();
     }
 
-    int count = 0;
+    long count = 0;
     for (int i = 0; i < N - 2; i++) {
-      for (int j = i + 1; j < N - 1; j++) {
-        for (int k = j + 1; k < N; k++) {
-          if ((locations[j] - locations[i]) <= D && (locations[k] - locations[j]) <= D
-              && (locations[k] - locations[i]) <= D) {
-            count++;
-          }
+      for (int j = i + 2; j < N; j++) {
+        if ((locations[j] - locations[i]) <= D) {
+          count += (j - i - 1);
         }
       }
     }
-    System.out.println(count);
+
+    System.out.println(count % 99997867);
   }
 
 }
