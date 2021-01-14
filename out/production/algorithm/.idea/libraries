@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="libraryTable">
+    <library name="ac-shared-service-0.0.1">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/Documents/homie.cn/ancient-culture-service/ac_shared_service/target/ac-shared-service-0.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</project>
