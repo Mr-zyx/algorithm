@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class answer {
+public class Answer {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class answer {
     }
     String[] chars = inputStr.split("");
     for (int i = 2; i < chars.length; i++) {
-      if (chars[i].equals(chars[i - 1]) && chars[i].equals(chars[i - 2])) {
+      if (Objects.equals(chars[i], chars[i - 1]) && Objects.equals(chars[i], chars[i - 2])) {
         chars[i] = null;
       }
     }
@@ -49,7 +49,7 @@ public class answer {
     }
     String[] chars = inputStr.split("");
     for (int i = 3; i < chars.length; i++) {
-      if (chars[i].equals(chars[i - 1]) && chars[i - 2].equals(chars[i - 3])) {
+      if (Objects.equals(chars[i], chars[i - 1]) && Objects.equals(chars[i - 2], chars[i - 3])) {
         chars[i] = null;
       }
     }
